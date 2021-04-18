@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [CSAFP_TEST_AUTOMATION]">
+  <test name="CSAFP-US_FASTPATH">
+    <classes>
+      <class name="CSAFP_US.US_CSAfp_fastpath"/>
+    </classes>
+  </test> <!-- CSAFP-US_FASTPATH -->
+  <test name="CSAFP-US_FASTPATH(failed)">
+    <classes>
+      <class name="CSAFP_US.US_CSAfp_fastpath">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="add_JRSSTest"/>
+          <include name="RIPC_reqSearchTest"/>
+          <include name="ripc_enterMilestoneDetailsTest"/>
+          <include name="ripc_createRequestTest"/>
+          <include name="buyer_verifyPeopleInvolvedTest"/>
+          <include name="buyer_verifySuppliersTest"/>
+          <include name="buyer_SkipSupplier"/>
+          <include name="RIPC_openRequestTest"/>
+          <include name="ripc_termsandcondition"/>
+          <include name="buyer_awaitingActionTest"/>
+          <include name="click_PeopleInvolvedTest"/>
+          <include name="ripc_submitRequestTest"/>
+          <include name="ripc_supplierQuestionsTest"/>
+          <include name="buyer_verifySupplierQuesTest"/>
+          <include name="buyer_loginTest"/>
+          <include name="ripc_supplierEvaluationTest"/>
+          <include name="click_SuppliersTest"/>
+          <include name="buyer_milestoneTest"/>
+          <include name="ripc_loginTest"/>
+          <include name="buyer_verifyProjectAttributesTest"/>
+          <include name="buyer_enterEvaluationCriteriaTest"/>
+          <include name="ripc_enterProjectAttributesTest"/>
+          <include name="buyer_termsandcondition"/>
+          <include name="ripc_addMilestoneTest"/>
+          <include name="ripc_loginTest1"/>
+        </methods>
+      </class> <!-- CSAFP_US.US_CSAfp_fastpath -->
+    </classes>
+  </test> <!-- CSAFP-US_FASTPATH(failed) -->
+</suite> <!-- Failed suite [CSAFP_TEST_AUTOMATION] -->

@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-CSAFP_TEST_AUTOMATION">
+              <span class="suite-name border-failed">CSAFP_TEST_AUTOMATION</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-CSAFP_TEST_AUTOMATION">
+                    <span>C:\Users\FarheenNaaz\GitHub Test Automation\Updated code\CSAFP_AUTOMATION_TEST-master\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-CSAFP_TEST_AUTOMATION">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-CSAFP_TEST_AUTOMATION">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-CSAFP_TEST_AUTOMATION">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-CSAFP_TEST_AUTOMATION">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-CSAFP_TEST_AUTOMATION">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-CSAFP_TEST_AUTOMATION">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">25 methods, 1 failed,  24 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-CSAFP_TEST_AUTOMATION" class="hide-methods failed suite-CSAFP_TEST_AUTOMATION"> (hide)</a> <!-- hide-methods failed suite-CSAFP_TEST_AUTOMATION -->
+                      <a href="#" panel-name="suite-CSAFP_TEST_AUTOMATION" class="show-methods failed suite-CSAFP_TEST_AUTOMATION"> (show)</a> <!-- show-methods failed suite-CSAFP_TEST_AUTOMATION -->
+                    </span>
+                    <div class="method-list-content failed suite-CSAFP_TEST_AUTOMATION">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CSAFP_TEST_AUTOMATION" title="CSAFP_US.US_CSAfp_fastpath" hash-for-method="ripc_loginTest">ripc_loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-CSAFP_TEST_AUTOMATION -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-CSAFP_TEST_AUTOMATION" class="hide-methods skipped suite-CSAFP_TEST_AUTOMATION"> (hide)</a> <!-- hide-methods skipped suite-CSAFP_TEST_AUTOMATION -->
+                      <a href="#" panel-name="suite-CSAFP_TEST_AUTOMATION" class="show-methods skipped suite-CSAFP_TEST_AUTOMATION"> (show)</a> <!-- show-methods skipped suite-CSAFP_TEST_AUTOMATION -->
+                    </span>
+                    <div class="method-list-content skipped suite-CSAFP_TEST_AUTOMATION">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CSAFP_TEST_AUTOMATION" title="CSAFP_US.US_CSAfp_fastpath" hash-for-method="RIPC_openRequestTest">RIPC_openRequestTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CSAFP_TEST_AUTOMATION" title="CSAFP_US.US_CSAfp_fastpath" hash-for-method="RIPC_reqSearchTest">RIPC_reqSearchTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CSAFP_TEST_AUTOMATION" title="CSAFP_US.US_CSAfp_fastpath" hash-for-method="add_JRSSTest">add_JRSSTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CSAFP_TEST_AUTOMATION" title="CSAFP_US.US_CSAfp_fastpath" hash-for-method="buyer_SkipSupplier">buyer_SkipSupplier</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CSAFP_TEST_AUTOMATION" title="CSAFP_US.US_CSAfp_fastpath" hash-for-method="buyer_awaitingActionTest">buyer_awaitingActionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CSAFP_TEST_AUTOMATION" title="CSAFP_US.US_CSAfp_fastpath" hash-for-method="buyer_enterEvaluationCriteriaTest">buyer_enterEvaluationCriteriaTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CSAFP_TEST_AUTOMATION" title="CSAFP_US.US_CSAfp_fastpath" hash-for-method="buyer_loginTest">buyer_loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CSAFP_TEST_AUTOMATION" title="CSAFP_US.US_CSAfp_fastpath" hash-for-method="buyer_milestoneTest">buyer_milestoneTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CSAFP_TEST_AUTOMATION" title="CSAFP_US.US_CSAfp_fastpath" hash-for-method="buyer_termsandcondition">buyer_termsandcondition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CSAFP_TEST_AUTOMATION" title="CSAFP_US.US_CSAfp_fastpath" hash-for-method="buyer_verifyPeopleInvolvedTest">buyer_verifyPeopleInvolvedTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CSAFP_TEST_AUTOMATION" title="CSAFP_US.US_CSAfp_fastpath" hash-for-method="buyer_verifyProjectAttributesTest">buyer_verifyProjectAttributesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CSAFP_TEST_AUTOMATION" title="CSAFP_US.US_CSAfp_fastpath" hash-for-method="buyer_verifySupplierQuesTest">buyer_verifySupplierQuesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CSAFP_TEST_AUTOMATION" title="CSAFP_US.US_CSAfp_fastpath" hash-for-method="buyer_verifySuppliersTest">buyer_verifySuppliersTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CSAFP_TEST_AUTOMATION" title="CSAFP_US.US_CSAfp_fastpath" hash-for-method="click_PeopleInvolvedTest">click_PeopleInvolvedTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CSAFP_TEST_AUTOMATION" title="CSAFP_US.US_CSAfp_fastpath" hash-for-method="click_SuppliersTest">click_SuppliersTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CSAFP_TEST_AUTOMATION" title="CSAFP_US.US_CSAfp_fastpath" hash-for-method="ripc_addMilestoneTest">ripc_addMilestoneTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CSAFP_TEST_AUTOMATION" title="CSAFP_US.US_CSAfp_fastpath" hash-for-method="ripc_createRequestTest">ripc_createRequestTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CSAFP_TEST_AUTOMATION" title="CSAFP_US.US_CSAfp_fastpath" hash-for-method="ripc_enterMilestoneDetailsTest">ripc_enterMilestoneDetailsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CSAFP_TEST_AUTOMATION" title="CSAFP_US.US_CSAfp_fastpath" hash-for-method="ripc_enterProjectAttributesTest">ripc_enterProjectAttributesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CSAFP_TEST_AUTOMATION" title="CSAFP_US.US_CSAfp_fastpath" hash-for-method="ripc_loginTest1">ripc_loginTest1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CSAFP_TEST_AUTOMATION" title="CSAFP_US.US_CSAfp_fastpath" hash-for-method="ripc_submitRequestTest">ripc_submitRequestTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CSAFP_TEST_AUTOMATION" title="CSAFP_US.US_CSAfp_fastpath" hash-for-method="ripc_supplierEvaluationTest">ripc_supplierEvaluationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CSAFP_TEST_AUTOMATION" title="CSAFP_US.US_CSAfp_fastpath" hash-for-method="ripc_supplierQuestionsTest">ripc_supplierQuestionsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CSAFP_TEST_AUTOMATION" title="CSAFP_US.US_CSAfp_fastpath" hash-for-method="ripc_termsandcondition">ripc_termsandcondition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-CSAFP_TEST_AUTOMATION -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-CSAFP_TEST_AUTOMATION" class="panel CSAFP_TEST_AUTOMATION">
+          <div class="suite-CSAFP_TEST_AUTOMATION-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">CSAFP_US.US_CSAfp_fastpath</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ripc_loginTest">
+                  </a> <!-- ripc_loginTest -->
+                  <span class="method-name">ripc_loginTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at Wrappers.GenericWrappers_US.login(GenericWrappers_US.java:38)
+	at CSAFP_US.US_CSAfp_fastpath.ripc_loginTest(US_CSAfp_fastpath.java:50)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CSAFP_TEST_AUTOMATION-class-failed -->
+          <div class="suite-CSAFP_TEST_AUTOMATION-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">CSAFP_US.US_CSAfp_fastpath</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RIPC_openRequestTest">
+                  </a> <!-- RIPC_openRequestTest -->
+                  <span class="method-name">RIPC_openRequestTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method US_CSAfp_fastpath.RIPC_openRequestTest()[pri:25, instance:CSAFP_US.US_CSAfp_fastpath@5e5792a0] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RIPC_reqSearchTest">
+                  </a> <!-- RIPC_reqSearchTest -->
+                  <span class="method-name">RIPC_reqSearchTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method US_CSAfp_fastpath.RIPC_reqSearchTest()[pri:24, instance:CSAFP_US.US_CSAfp_fastpath@5e5792a0] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="add_JRSSTest">
+                  </a> <!-- add_JRSSTest -->
+                  <span class="method-name">add_JRSSTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method US_CSAfp_fastpath.add_JRSSTest()[pri:6, instance:CSAFP_US.US_CSAfp_fastpath@5e5792a0] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyer_SkipSupplier">
+                  </a> <!-- buyer_SkipSupplier -->
+                  <span class="method-name">buyer_SkipSupplier</span>
+                  <div class="stack-trace">java.lang.Throwable: Method US_CSAfp_fastpath.buyer_SkipSupplier()[pri:22, instance:CSAFP_US.US_CSAfp_fastpath@5e5792a0] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyer_awaitingActionTest">
+                  </a> <!-- buyer_awaitingActionTest -->
+                  <span class="method-name">buyer_awaitingActionTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method US_CSAfp_fastpath.buyer_awaitingActionTest()[pri:14, instance:CSAFP_US.US_CSAfp_fastpath@5e5792a0] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyer_enterEvaluationCriteriaTest">
+                  </a> <!-- buyer_enterEvaluationCriteriaTest -->
+                  <span class="method-name">buyer_enterEvaluationCriteriaTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method US_CSAfp_fastpath.buyer_enterEvaluationCriteriaTest()[pri:20, instance:CSAFP_US.US_CSAfp_fastpath@5e5792a0] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyer_loginTest">
+                  </a> <!-- buyer_loginTest -->
+                  <span class="method-name">buyer_loginTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method US_CSAfp_fastpath.buyer_loginTest()[pri:13, instance:CSAFP_US.US_CSAfp_fastpath@5e5792a0] depends on not successfully finished methods in group &quot;requester&quot;
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyer_milestoneTest">
+                  </a> <!-- buyer_milestoneTest -->
+                  <span class="method-name">buyer_milestoneTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method US_CSAfp_fastpath.buyer_milestoneTest()[pri:16, instance:CSAFP_US.US_CSAfp_fastpath@5e5792a0] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyer_termsandcondition">
+                  </a> <!-- buyer_termsandcondition -->
+                  <span class="method-name">buyer_termsandcondition</span>
+                  <div class="stack-trace">java.lang.Throwable: Method US_CSAfp_fastpath.buyer_termsandcondition()[pri:21, instance:CSAFP_US.US_CSAfp_fastpath@5e5792a0] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyer_verifyPeopleInvolvedTest">
+                  </a> <!-- buyer_verifyPeopleInvolvedTest -->
+                  <span class="method-name">buyer_verifyPeopleInvolvedTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method US_CSAfp_fastpath.buyer_verifyPeopleInvolvedTest()[pri:17, instance:CSAFP_US.US_CSAfp_fastpath@5e5792a0] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyer_verifyProjectAttributesTest">
+                  </a> <!-- buyer_verifyProjectAttributesTest -->
+                  <span class="method-name">buyer_verifyProjectAttributesTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method US_CSAfp_fastpath.buyer_verifyProjectAttributesTest()[pri:15, instance:CSAFP_US.US_CSAfp_fastpath@5e5792a0] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyer_verifySupplierQuesTest">
+                  </a> <!-- buyer_verifySupplierQuesTest -->
+                  <span class="method-name">buyer_verifySupplierQuesTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method US_CSAfp_fastpath.buyer_verifySupplierQuesTest()[pri:19, instance:CSAFP_US.US_CSAfp_fastpath@5e5792a0] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyer_verifySuppliersTest">
+                  </a> <!-- buyer_verifySuppliersTest -->
+                  <span class="method-name">buyer_verifySuppliersTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method US_CSAfp_fastpath.buyer_verifySuppliersTest()[pri:18, instance:CSAFP_US.US_CSAfp_fastpath@5e5792a0] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="click_PeopleInvolvedTest">
+                  </a> <!-- click_PeopleInvolvedTest -->
+                  <span class="method-name">click_PeopleInvolvedTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method US_CSAfp_fastpath.click_PeopleInvolvedTest()[pri:7, instance:CSAFP_US.US_CSAfp_fastpath@5e5792a0] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="click_SuppliersTest">
+                  </a> <!-- click_SuppliersTest -->
+                  <span class="method-name">click_SuppliersTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method US_CSAfp_fastpath.click_SuppliersTest()[pri:8, instance:CSAFP_US.US_CSAfp_fastpath@5e5792a0] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ripc_addMilestoneTest">
+                  </a> <!-- ripc_addMilestoneTest -->
+                  <span class="method-name">ripc_addMilestoneTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method US_CSAfp_fastpath.ripc_addMilestoneTest()[pri:4, instance:CSAFP_US.US_CSAfp_fastpath@5e5792a0] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ripc_createRequestTest">
+                  </a> <!-- ripc_createRequestTest -->
+                  <span class="method-name">ripc_createRequestTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method US_CSAfp_fastpath.ripc_createRequestTest()[pri:2, instance:CSAFP_US.US_CSAfp_fastpath@5e5792a0] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ripc_enterMilestoneDetailsTest">
+                  </a> <!-- ripc_enterMilestoneDetailsTest -->
+                  <span class="method-name">ripc_enterMilestoneDetailsTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method US_CSAfp_fastpath.ripc_enterMilestoneDetailsTest()[pri:5, instance:CSAFP_US.US_CSAfp_fastpath@5e5792a0] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ripc_enterProjectAttributesTest">
+                  </a> <!-- ripc_enterProjectAttributesTest -->
+                  <span class="method-name">ripc_enterProjectAttributesTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method US_CSAfp_fastpath.ripc_enterProjectAttributesTest()[pri:3, instance:CSAFP_US.US_CSAfp_fastpath@5e5792a0] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ripc_loginTest1">
+                  </a> <!-- ripc_loginTest1 -->
+                  <span class="method-name">ripc_loginTest1</span>
+                  <div class="stack-trace">java.lang.Throwable: Method US_CSAfp_fastpath.ripc_loginTest1()[pri:23, instance:CSAFP_US.US_CSAfp_fastpath@5e5792a0] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ripc_submitRequestTest">
+                  </a> <!-- ripc_submitRequestTest -->
+                  <span class="method-name">ripc_submitRequestTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method US_CSAfp_fastpath.ripc_submitRequestTest()[pri:12, instance:CSAFP_US.US_CSAfp_fastpath@5e5792a0] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ripc_supplierEvaluationTest">
+                  </a> <!-- ripc_supplierEvaluationTest -->
+                  <span class="method-name">ripc_supplierEvaluationTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method US_CSAfp_fastpath.ripc_supplierEvaluationTest()[pri:10, instance:CSAFP_US.US_CSAfp_fastpath@5e5792a0] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ripc_supplierQuestionsTest">
+                  </a> <!-- ripc_supplierQuestionsTest -->
+                  <span class="method-name">ripc_supplierQuestionsTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method US_CSAfp_fastpath.ripc_supplierQuestionsTest()[pri:9, instance:CSAFP_US.US_CSAfp_fastpath@5e5792a0] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ripc_termsandcondition">
+                  </a> <!-- ripc_termsandcondition -->
+                  <span class="method-name">ripc_termsandcondition</span>
+                  <div class="stack-trace">java.lang.Throwable: Method US_CSAfp_fastpath.ripc_termsandcondition()[pri:11, instance:CSAFP_US.US_CSAfp_fastpath@5e5792a0] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CSAFP_TEST_AUTOMATION-class-skipped -->
+        </div> <!-- panel CSAFP_TEST_AUTOMATION -->
+        <div panel-name="test-xml-CSAFP_TEST_AUTOMATION" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\FarheenNaaz\GitHub Test Automation\Updated code\CSAFP_AUTOMATION_TEST-master\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; name=&quot;CSAFP_TEST_AUTOMATION&quot;&gt;
+  &lt;test name=&quot;CSAFP-US_FASTPATH&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;CSAFP_US.US_CSAfp_fastpath&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CSAFP-US_FASTPATH --&gt;
+&lt;/suite&gt; &lt;!-- CSAFP_TEST_AUTOMATION --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-CSAFP_TEST_AUTOMATION" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for CSAFP_TEST_AUTOMATION</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">CSAFP-US_FASTPATH (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-CSAFP_TEST_AUTOMATION" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for CSAFP_TEST_AUTOMATION</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">buyer</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">buyer_SkipSupplier</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">buyer_awaitingActionTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">buyer_enterEvaluationCriteriaTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">buyer_loginTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">buyer_milestoneTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">buyer_termsandcondition</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">buyer_verifyPeopleInvolvedTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">buyer_verifyProjectAttributesTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">buyer_verifySupplierQuesTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">buyer_verifySuppliersTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">requester</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">add_JRSSTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">click_PeopleInvolvedTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">click_SuppliersTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">ripc_addMilestoneTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">ripc_createRequestTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">ripc_enterMilestoneDetailsTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">ripc_enterProjectAttributesTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">ripc_loginTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">ripc_submitRequestTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">ripc_supplierEvaluationTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">ripc_supplierQuestionsTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">ripc_termsandcondition</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">requester1</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">RIPC_openRequestTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">RIPC_reqSearchTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">ripc_loginTest1</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-CSAFP_TEST_AUTOMATION" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for CSAFP_TEST_AUTOMATION</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_CSAFP_TEST_AUTOMATION');
+function tableData_CSAFP_TEST_AUTOMATION() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(25);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'ripc_loginTest')
+data.setCell(0, 2, 'CSAFP_US.US_CSAfp_fastpath')
+data.setCell(0, 3, 7475);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'add_JRSSTest')
+data.setCell(1, 2, 'CSAFP_US.US_CSAfp_fastpath')
+data.setCell(1, 3, 20);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'ripc_termsandcondition')
+data.setCell(2, 2, 'CSAFP_US.US_CSAfp_fastpath')
+data.setCell(2, 3, 1);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'ripc_createRequestTest')
+data.setCell(3, 2, 'CSAFP_US.US_CSAfp_fastpath')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'ripc_submitRequestTest')
+data.setCell(4, 2, 'CSAFP_US.US_CSAfp_fastpath')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'ripc_enterProjectAttributesTest')
+data.setCell(5, 2, 'CSAFP_US.US_CSAfp_fastpath')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'ripc_loginTest1')
+data.setCell(6, 2, 'CSAFP_US.US_CSAfp_fastpath')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'buyer_SkipSupplier')
+data.setCell(7, 2, 'CSAFP_US.US_CSAfp_fastpath')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'ripc_supplierQuestionsTest')
+data.setCell(8, 2, 'CSAFP_US.US_CSAfp_fastpath')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'ripc_supplierEvaluationTest')
+data.setCell(9, 2, 'CSAFP_US.US_CSAfp_fastpath')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'buyer_verifySuppliersTest')
+data.setCell(10, 2, 'CSAFP_US.US_CSAfp_fastpath')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'buyer_verifyProjectAttributesTest')
+data.setCell(11, 2, 'CSAFP_US.US_CSAfp_fastpath')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'click_PeopleInvolvedTest')
+data.setCell(12, 2, 'CSAFP_US.US_CSAfp_fastpath')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'buyer_awaitingActionTest')
+data.setCell(13, 2, 'CSAFP_US.US_CSAfp_fastpath')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'buyer_enterEvaluationCriteriaTest')
+data.setCell(14, 2, 'CSAFP_US.US_CSAfp_fastpath')
+data.setCell(14, 3, 0);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'buyer_loginTest')
+data.setCell(15, 2, 'CSAFP_US.US_CSAfp_fastpath')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'buyer_verifyPeopleInvolvedTest')
+data.setCell(16, 2, 'CSAFP_US.US_CSAfp_fastpath')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'ripc_addMilestoneTest')
+data.setCell(17, 2, 'CSAFP_US.US_CSAfp_fastpath')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'buyer_termsandcondition')
+data.setCell(18, 2, 'CSAFP_US.US_CSAfp_fastpath')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'ripc_enterMilestoneDetailsTest')
+data.setCell(19, 2, 'CSAFP_US.US_CSAfp_fastpath')
+data.setCell(19, 3, 0);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'buyer_verifySupplierQuesTest')
+data.setCell(20, 2, 'CSAFP_US.US_CSAfp_fastpath')
+data.setCell(20, 3, 0);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'buyer_milestoneTest')
+data.setCell(21, 2, 'CSAFP_US.US_CSAfp_fastpath')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'click_SuppliersTest')
+data.setCell(22, 2, 'CSAFP_US.US_CSAfp_fastpath')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'RIPC_openRequestTest')
+data.setCell(23, 2, 'CSAFP_US.US_CSAfp_fastpath')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'RIPC_reqSearchTest')
+data.setCell(24, 2, 'CSAFP_US.US_CSAfp_fastpath')
+data.setCell(24, 3, 0);
+window.suiteTableData['CSAFP_TEST_AUTOMATION']= { tableData: data, tableDiv: 'times-div-CSAFP_TEST_AUTOMATION'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <div id="times-div-CSAFP_TEST_AUTOMATION">
+              </div> <!-- times-div-CSAFP_TEST_AUTOMATION -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-CSAFP_TEST_AUTOMATION" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for CSAFP_TEST_AUTOMATION</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-CSAFP_TEST_AUTOMATION" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-CSAFP_TEST_AUTOMATION" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">CSAFP_US.US_CSAfp_fastpath</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ripc_loginTest</span>
+                <span class="method-start">333 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

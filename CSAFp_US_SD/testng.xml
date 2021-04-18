@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <suite thread-count="1" verbose="1" name="CSAFP_TEST_AUTOMATION" annotations="JDK" 
+	parallel="tests"> <suite-files> <suite-file path="./testJPSuite.xml" /> <suite-file 
+	path="./testUSSuite.xml" /> </suite-files> </suite> -->
+
+<suite thread-count="1" verbose="1" name="CSAFP_TEST_AUTOMATION"
+	parallel="false" preserve-order="true">
+	
+	<!-- <test name="CSAFP-US_FASTPATH">
+		<classes>
+			<class name="CSAFP_US.US_CSAfp_fastpath" />
+		</classes>
+	</test> -->
+	<test name="CSAFP-US_FLOW">
+		<classes>
+			<class name="CSAFP_US_BD.US_BuyerDriven_IBMLoc" />
+		</classes>
+	</test>
+</suite>
+
+
+
+
+
+
+
+
+
+<!-- <suite name="CSAFP_TEST_AUTOMATION" parallel="tests" thread-count="1" 
+	verbose="1" annotations="JDK"> <test name="CSAFP-JP_FLOW"> <groups> <run> 
+	<include name="requester" /> <include name="buyer" /> <include name="supplier" 
+	/> <include name="buyer1" /> <include name="requester1" /> </run> </groups> 
+	<test name="JP BUYER DRIVEN" enabled="true" parallel="methods"> <classes> 
+	<class name="CSAFP_JP.JP_BuyerDriven_IBMLoc" /> </classes> </test> </test> 
+	Test <test name="CSAFP_US_FASTPATH"> <groups> <run> <include name="Buyer_Step2" 
+	/> <include name="RIPC_step1" /> <include name="RIPC_Step3" /> </run> </groups> 
+	<test name="US FASTH PATH" enabled="true" parallel="methods"> <classes> <class 
+	name="CSAFP_US.US_CSAfp_fastpath" /> </classes> </test> </test> Test </suite> 
+	Suite -->
